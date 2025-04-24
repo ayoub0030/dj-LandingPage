@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Morocco - Feel the Beat of Morocco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <button class="active" data-lang="en">EN</button>
+        <button data-lang="fr">FR</button>
+        <button data-lang="ar">العربية</button>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>DJ</span>MOROCCO
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glow-text">FEEL THE BEAT OF MOROCCO</h1>
+            <p>Where traditional Moroccan rhythms meet modern electronic beats</p>
+            <a href="#events" class="btn primary-btn">Upcoming Shows</a>
+            <a href="#music" class="btn secondary-btn">Listen Now</a>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="animated-bg">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About The Sound</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://source.unsplash.com/random/600x800/?dj,morocco" alt="DJ Morocco">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="about-text">
+                    <h3>Fusion of Cultures</h3>
+                    <p>Experience the unique sound that blends traditional Moroccan instruments with cutting-edge electronic production. Each set takes you on a journey through the ancient medinas and modern nightlife of Morocco.</p>
+                    
+                    <h3>Moroccan Electronic Fusion</h3>
+                    <p>Drawing inspiration from the rich musical heritage of Morocco, our sound incorporates traditional instruments like the oud, bendir, and qraqeb with pulsating house and techno beats, creating an unforgettable auditory experience.</p>
+                    
+                    <h3>Global Influences</h3>
+                    <p>Having performed across Europe, North Africa, and the Middle East, our music reflects a global sensibility while staying true to Moroccan roots, creating a unique sonic experience for every audience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-container">
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month">APR</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Sahara Nights</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Club Atlas, Marrakech</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 10:00 PM - 4:00 AM</p>
+                        <a href="#" class="btn small-btn">Get Tickets</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">MAY</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Mediterranean Fusion</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Beach Club, Casablanca</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 9:00 PM - 3:00 AM</p>
+                        <a href="#" class="btn small-btn">Get Tickets</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">MAY</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Desert Electronica</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Oasis Resort, Merzouga</p>
+                        <p class="event-time"><i class="far fa-clock"></i> 8:00 PM - 2:00 AM</p>
+                        <a href="#" class="btn small-btn">Get Tickets</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title past-events-title">Past Shows</h2>
+            <div class="past-events">
+                <div class="past-event">
+                    <img src="https://source.unsplash.com/random/400x300/?concert,morocco" alt="Past Event">
+                    <div class="past-event-overlay">
+                        <h3>Medina Beats</h3>
+                        <p>Fez, Morocco</p>
+                    </div>
+                </div>
+                <div class="past-event">
+                    <img src="https://source.unsplash.com/random/400x300/?dj,party" alt="Past Event">
+                    <div class="past-event-overlay">
+                        <h3>Atlas Rhythms</h3>
+                        <p>Ifrane, Morocco</p>
+                    </div>
+                </div>
+                <div class="past-event">
+                    <img src="https://source.unsplash.com/random/400x300/?nightclub" alt="Past Event">
+                    <div class="past-event-overlay">
+                        <h3>Coastal Grooves</h3>
+                        <p>Tangier, Morocco</p>
+                    </div>
+                </div>
+                <div class="past-event">
+                    <img src="https://source.unsplash.com/random/400x300/?festival" alt="Past Event">
+                    <div class="past-event-overlay">
+                        <h3>Sunset Sessions</h3>
+                        <p>Essaouira, Morocco</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player Section -->
+    <section id="music" class="music">
+        <div class="container">
+            <h2 class="section-title">Latest Tracks</h2>
+            <div class="music-player-container">
+                <div class="music-player">
+                    <div class="player-controls">
+                        <div class="track-art"></div>
+                        <div class="track-info">
+                            <div class="track-name">Moroccan Sunset</div>
+                            <div class="track-artist">DJ Morocco</div>
+                        </div>
+                        <div class="controls">
+                            <div class="prev-track"><i class="fas fa-step-backward"></i></div>
+                            <div class="playpause-track"><i class="fas fa-play"></i></div>
+                            <div class="next-track"><i class="fas fa-step-forward"></i></div>
+                        </div>
+                        <div class="slider-container">
+                            <div class="current-time">00:00</div>
+                            <input type="range" min="1" max="100" value="0" class="seek-slider">
+                            <div class="total-duration">00:00</div>
+                        </div>
+                        <div class="volume-container">
+                            <i class="fas fa-volume-up"></i>
+                            <input type="range" min="1" max="100" value="99" class="volume-slider">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="playlist">
+                    <div class="playlist-item active">
+                        <div class="playlist-item-img">
+                            <img src="https://source.unsplash.com/random/50x50/?morocco,music" alt="Track 1">
+                        </div>
+                        <div class="playlist-item-info">
+                            <h4>Moroccan Sunset</h4>
+                            <p>House Fusion • 5:24</p>
+                        </div>
+                        <div class="playlist-item-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="playlist-item-img">
+                            <img src="https://source.unsplash.com/random/50x50/?desert,music" alt="Track 2">
+                        </div>
+                        <div class="playlist-item-info">
+                            <h4>Atlas Mountains</h4>
+                            <p>Deep House • 4:56</p>
+                        </div>
+                        <div class="playlist-item-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <div class="playlist-item-img">
+                            <img src="https://source.unsplash.com/random/50x50/?club,music" alt="Track 3">
+                        </div>
+                        <div class="playlist-item-info">
+                            <h4>Medina Nights</h4>
+                            <p>Techno • 6:32</p>
+                        </div>
+                        <div class="playlist-item-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section id="gallery" class="instagram-feed">
+        <div class="container">
+            <h2 class="section-title">Instagram</h2>
+            <p class="insta-tagline">Follow <a href="https://instagram.com" target="_blank">@djmorocco</a> for the latest updates</p>
+            <div class="instagram-container">
+                <div class="instagram-item">
+                    <img src="https://source.unsplash.com/random/300x300/?morocco,dj" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://source.unsplash.com/random/300x300/?music,performance" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://source.unsplash.com/random/300x300/?concert,lights" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://source.unsplash.com/random/300x300/?morocco,night" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://source.unsplash.com/random/300x300/?turntable,vinyl" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="instagram-item">
+                    <img src="https://source.unsplash.com/random/300x300/?festival,electronic" alt="Instagram Post">
+                    <div class="instagram-overlay">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Book Your Event</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>For bookings, collaborations, or just to say hello, fill out the form or reach out directly:</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>booking@djmorocco.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+212 5XX-XXXXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Marrakech, Morocco</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-soundcloud"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="event-date" placeholder="Event Date" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="event-location" placeholder="Event Location" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="event-type" required>
+                                <option value="" disabled selected>Event Type</option>
+                                <option value="club">Club Night</option>
+                                <option value="festival">Festival</option>
+                                <option value="private">Private Event</option>
+                                <option value="corporate">Corporate Event</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Tell us about your event..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>DJ</span>MOROCCO
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#music">Music</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DJ Morocco. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
