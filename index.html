@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Link to the new CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,6 +25,7 @@
             <div class="logo">
                 <span>DJ</span>MOROCCO
             </div>
+            <!-- Add 'active' class to nav via JS for mobile -->
             <nav>
                 <ul>
                     <li><a href="#home" class="active">Home</a></li>
@@ -44,13 +46,13 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="glow-text">FEEL THE BEAT OF MOROCCO</h1>
             <p>Where traditional Moroccan rhythms meet modern electronic beats</p>
             <a href="#events" class="btn primary-btn">Upcoming Shows</a>
             <a href="#music" class="btn secondary-btn">Listen Now</a>
         </div>
-        <div class="hero-overlay"></div>
         <div class="animated-bg">
             <div class="wave"></div>
             <div class="wave"></div>
@@ -64,16 +66,16 @@
             <h2 class="section-title">About The Sound</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://source.unsplash.com/random/600x800/?dj,morocco" alt="DJ Morocco">
+                    <img src="https://source.unsplash.com/random/600x800/?dj,morocco,portrait" alt="DJ Morocco">
                     <div class="image-overlay"></div>
                 </div>
                 <div class="about-text">
                     <h3>Fusion of Cultures</h3>
                     <p>Experience the unique sound that blends traditional Moroccan instruments with cutting-edge electronic production. Each set takes you on a journey through the ancient medinas and modern nightlife of Morocco.</p>
-                    
+
                     <h3>Moroccan Electronic Fusion</h3>
                     <p>Drawing inspiration from the rich musical heritage of Morocco, our sound incorporates traditional instruments like the oud, bendir, and qraqeb with pulsating house and techno beats, creating an unforgettable auditory experience.</p>
-                    
+
                     <h3>Global Influences</h3>
                     <p>Having performed across Europe, North Africa, and the Middle East, our music reflects a global sensibility while staying true to Moroccan roots, creating a unique sonic experience for every audience.</p>
                 </div>
@@ -95,10 +97,10 @@
                         <h3>Sahara Nights</h3>
                         <p class="event-location"><i class="fas fa-map-marker-alt"></i> Club Atlas, Marrakech</p>
                         <p class="event-time"><i class="far fa-clock"></i> 10:00 PM - 4:00 AM</p>
-                        <a href="#" class="btn small-btn">Get Tickets</a>
+                        <a href="#" class="btn primary-btn small-btn">Get Tickets</a>
                     </div>
                 </div>
-                
+
                 <div class="event-card">
                     <div class="event-date">
                         <span class="day">15</span>
@@ -108,10 +110,10 @@
                         <h3>Mediterranean Fusion</h3>
                         <p class="event-location"><i class="fas fa-map-marker-alt"></i> Beach Club, Casablanca</p>
                         <p class="event-time"><i class="far fa-clock"></i> 9:00 PM - 3:00 AM</p>
-                        <a href="#" class="btn small-btn">Get Tickets</a>
+                        <a href="#" class="btn primary-btn small-btn">Get Tickets</a>
                     </div>
                 </div>
-                
+
                 <div class="event-card">
                     <div class="event-date">
                         <span class="day">22</span>
@@ -121,7 +123,7 @@
                         <h3>Desert Electronica</h3>
                         <p class="event-location"><i class="fas fa-map-marker-alt"></i> Oasis Resort, Merzouga</p>
                         <p class="event-time"><i class="far fa-clock"></i> 8:00 PM - 2:00 AM</p>
-                        <a href="#" class="btn small-btn">Get Tickets</a>
+                        <a href="#" class="btn primary-btn small-btn">Get Tickets</a>
                     </div>
                 </div>
             </div>
@@ -174,7 +176,7 @@
                         </div>
                         <div class="controls">
                             <div class="prev-track"><i class="fas fa-step-backward"></i></div>
-                            <div class="playpause-track"><i class="fas fa-play"></i></div>
+                            <div class="playpause-track"><i class="fas fa-play"></i></div> <!-- JS should toggle fa-play/fa-pause -->
                             <div class="next-track"><i class="fas fa-step-forward"></i></div>
                         </div>
                         <div class="slider-container">
@@ -182,29 +184,30 @@
                             <input type="range" min="1" max="100" value="0" class="seek-slider">
                             <div class="total-duration">00:00</div>
                         </div>
-                        <div class="volume-container">
-                            <i class="fas fa-volume-up"></i>
-                            <input type="range" min="1" max="100" value="99" class="volume-slider">
-                        </div>
+                         <div class="volume-container">
+                            <i class="fas fa-volume-down"></i> <!-- JS might change icon based on level -->
+                            <input type="range" min="0" max="100" value="90" class="volume-slider">
+                         </div>
                     </div>
                 </div>
-                
+
                 <div class="playlist">
+                    <!-- JS should add 'active' class to the playing item -->
                     <div class="playlist-item active">
                         <div class="playlist-item-img">
-                            <img src="https://source.unsplash.com/random/50x50/?morocco,music" alt="Track 1">
+                            <img src="https://source.unsplash.com/random/50x50/?morocco,music,pattern" alt="Track 1">
                         </div>
                         <div class="playlist-item-info">
                             <h4>Moroccan Sunset</h4>
                             <p>House Fusion • 5:24</p>
                         </div>
                         <div class="playlist-item-play">
-                            <i class="fas fa-play"></i>
+                            <i class="fas fa-pause"></i> <!-- Or fa-play if not active -->
                         </div>
                     </div>
                     <div class="playlist-item">
                         <div class="playlist-item-img">
-                            <img src="https://source.unsplash.com/random/50x50/?desert,music" alt="Track 2">
+                            <img src="https://source.unsplash.com/random/50x50/?desert,music,night" alt="Track 2">
                         </div>
                         <div class="playlist-item-info">
                             <h4>Atlas Mountains</h4>
@@ -216,11 +219,23 @@
                     </div>
                     <div class="playlist-item">
                         <div class="playlist-item-img">
-                            <img src="https://source.unsplash.com/random/50x50/?club,music" alt="Track 3">
+                            <img src="https://source.unsplash.com/random/50x50/?club,music,neon" alt="Track 3">
                         </div>
                         <div class="playlist-item-info">
                             <h4>Medina Nights</h4>
                             <p>Techno • 6:32</p>
+                        </div>
+                        <div class="playlist-item-play">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                     <div class="playlist-item"> <!-- Added another track for scrolling demo -->
+                        <div class="playlist-item-img">
+                            <img src="https://source.unsplash.com/random/50x50/?electronic,wave" alt="Track 4">
+                        </div>
+                        <div class="playlist-item-info">
+                            <h4>Coastal Drift</h4>
+                            <p>Ambient House • 7:10</p>
                         </div>
                         <div class="playlist-item-play">
                             <i class="fas fa-play"></i>
@@ -235,40 +250,40 @@
     <section id="gallery" class="instagram-feed">
         <div class="container">
             <h2 class="section-title">Instagram</h2>
-            <p class="insta-tagline">Follow <a href="https://instagram.com" target="_blank">@djmorocco</a> for the latest updates</p>
+            <p class="insta-tagline">Follow <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">@djmorocco</a> for the latest updates</p>
             <div class="instagram-container">
                 <div class="instagram-item">
-                    <img src="https://source.unsplash.com/random/300x300/?morocco,dj" alt="Instagram Post">
+                    <img src="https://source.unsplash.com/random/300x300/?morocco,dj,stage" alt="Instagram Post">
                     <div class="instagram-overlay">
                         <i class="fab fa-instagram"></i>
                     </div>
                 </div>
                 <div class="instagram-item">
-                    <img src="https://source.unsplash.com/random/300x300/?music,performance" alt="Instagram Post">
+                    <img src="https://source.unsplash.com/random/300x300/?music,performance,crowd" alt="Instagram Post">
                     <div class="instagram-overlay">
                         <i class="fab fa-instagram"></i>
                     </div>
                 </div>
                 <div class="instagram-item">
-                    <img src="https://source.unsplash.com/random/300x300/?concert,lights" alt="Instagram Post">
+                    <img src="https://source.unsplash.com/random/300x300/?concert,lights,laser" alt="Instagram Post">
                     <div class="instagram-overlay">
                         <i class="fab fa-instagram"></i>
                     </div>
                 </div>
                 <div class="instagram-item">
-                    <img src="https://source.unsplash.com/random/300x300/?morocco,night" alt="Instagram Post">
+                    <img src="https://source.unsplash.com/random/300x300/?morocco,night,city" alt="Instagram Post">
                     <div class="instagram-overlay">
                         <i class="fab fa-instagram"></i>
                     </div>
                 </div>
                 <div class="instagram-item">
-                    <img src="https://source.unsplash.com/random/300x300/?turntable,vinyl" alt="Instagram Post">
+                    <img src="https://source.unsplash.com/random/300x300/?turntable,vinyl,closeup" alt="Instagram Post">
                     <div class="instagram-overlay">
                         <i class="fab fa-instagram"></i>
                     </div>
                 </div>
                 <div class="instagram-item">
-                    <img src="https://source.unsplash.com/random/300x300/?festival,electronic" alt="Instagram Post">
+                    <img src="https://source.unsplash.com/random/300x300/?festival,electronic,people" alt="Instagram Post">
                     <div class="instagram-overlay">
                         <i class="fab fa-instagram"></i>
                     </div>
@@ -292,7 +307,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+212 5XX-XXXXXX</span>
+                            <span>+212 567853455</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -300,29 +315,30 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-soundcloud"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Soundcloud"><i class="fab fa-soundcloud"></i></a>
+                        <a href="#" class="social-link" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
                     <form id="booking-form">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="event-date" placeholder="Event Date" required>
+                            <!-- Consider using type="date" for better UX, requires styling -->
+                            <input type="text" id="event-date" name="event_date" placeholder="Event Date (e.g., YYYY-MM-DD)" required onfocus="(this.type='date')" onblur="(this.type='text')">
                         </div>
                         <div class="form-group">
-                            <input type="text" id="event-location" placeholder="Event Location" required>
+                            <input type="text" id="event-location" name="event_location" placeholder="Event Location" required>
                         </div>
                         <div class="form-group">
-                            <select id="event-type" required>
+                            <select id="event-type" name="event_type" required>
                                 <option value="" disabled selected>Event Type</option>
                                 <option value="club">Club Night</option>
                                 <option value="festival">Festival</option>
@@ -332,7 +348,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" placeholder="Tell us about your event..." required></textarea>
+                            <textarea id="message" name="message" placeholder="Tell us about your event..." required></textarea>
                         </div>
                         <button type="submit" class="btn primary-btn">Send Request</button>
                     </form>
@@ -354,16 +370,19 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#events">Events</a></li>
                         <li><a href="#music">Music</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 DJ Morocco. All Rights Reserved.</p>
+                <p>© 2025 DJ Morocco. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Add your JavaScript file here -->
+    <!-- Needed for: Mobile menu toggle, active nav link highlighting, music player controls, language switching -->
     <script src="script.js"></script>
 </body>
 </html>
